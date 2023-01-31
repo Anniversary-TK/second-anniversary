@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-16" />
+        <link preload href="main/main.css" rel="stylesheet" />
+        <link preload href="main/animation.css" rel="stylesheet" />
+        <link preload href="main/font.css" rel="stylesheet" />
+        <title>Anniversary | 2nd Celebration Message</title>
+    </head>
+    <body>
+        <div class="splash">
+            <img class="logo" src="main/asset/img/logo.png" alt="splash-logo" />
+        </div>
+        <div class="wrapper">
+            <div class="heart-container top">
+                <img
+                    class="heart"
+                    src="main/asset/img/heart.png"
+                    alt="couple-heart"
+                />
+            </div>
+            <div class="message">
+                <div class="slide-panel">
+                    <input
+                        class="slider-btn left"
+                        type="button"
+                        value="❮"
+                        onclick="OnPrevious()"
+                    />
+                </div>
+                <div class="message-box">
+                    <div class="avatar"></div>
+                    <div class="content">
+                        <p class="letter" id="letter">Dear Renzter,</p>
+                    </div>
+                </div>
+                <div class="slide-panel">
+                    <input
+                        class="slider-btn right"
+                        type="button"
+                        value="❯"
+                        onclick="OnNext()"
+                    />
+                </div>
+            </div>
+            <div class="heart-container bottom">
+                <img
+                    class="heart"
+                    src="main/asset/img/heart.png"
+                    alt="couple-heart"
+                />
+                <img
+                    class="couple"
+                    src="main/asset/img/couple.png"
+                    alt="couple-photo"
+                />
+            </div>
+        </div>
+        <script
+            src="main/main.js"
+            type="text/javascript"
+            defer
+            nonce=""
+        ></script>
+    </body>
+</html>
