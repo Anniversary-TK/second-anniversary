@@ -1,0 +1,259 @@
+:root {
+    --blue0004: #13b1feff;
+    --gray0009: #808080ff;
+    --pink0004: #fe77feff;
+    --pink0008: #fea5feff;
+    --charm-pink0001: #ff187cff;
+    --white: #ffffffff;
+}
+
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logo {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.left {
+    margin-rig: 100em;
+}
+
+.right {
+    margin-left: 100em;
+}
+
+@media screen and (min-width: 256px) {
+    .top {
+        justify-content: flex-end;
+    }
+
+    .bottom {
+        justify-content: flex-start;
+    }
+    .splash {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--pink0004);
+        position: absolute;
+        z-index: 999;
+    }
+
+    .splash > .logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: var(--pink0008);
+    }
+
+    .wrapper > .heart-container {
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        width: inherit;
+        height: 20vh;
+        overflow: hidden;
+    }
+
+    .wrapper > .heart-container > .heart {
+        width: 120px;
+        height: 120px;
+        scale: 0;
+    }
+
+    .wrapper > .heart-container > .couple {
+        margin: 0 0 0 auto;
+        width: 120px;
+        height: 120px;
+        scale: 0;
+    }
+
+    .wrapper > .message {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: 60vh;
+        overflow: hidden;
+        scale: 0;
+    }
+
+    .wrapper > .message > .message-box {
+        display: grid;
+        justify-items: center;
+        align-content: flex-start;
+        padding: 1em;
+        width: 60vw;
+        height: 50vh;
+        background-color: var(--white);
+        border-radius: 24px;
+    }
+
+    .wrapper > .message > .message-box > .avatar {
+        display: grid;
+        width: 60vw;
+        height: 25vh;
+        border-radius: 24px;
+        background-color: var(--gray0009);
+        background-image: url("asset/img/renzter.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper > .message > .message-box > .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: inherit;
+        height: 25vh;
+    }
+
+    .letter {
+        font-family: Better Sweet;
+        font-size: 24px;
+    }
+
+
+    .wrapper > .message > .slide-panel {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 0 0.5 0 0.5em;
+        overflow: hidden;
+        width: 20vw;
+        height: inherit;
+    }
+
+    .wrapper > .message > .slide-panel > .slider-btn {
+        width: 8vh;
+        height: 8vh;
+        border: 0px;
+        border-radius: 45px;
+        text-align: center;
+        font-size: 36px;
+        background-color: transparent;
+        color: var(--charm-pink0001);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .top {
+        align-content: flex-start;
+    }
+
+    .bottom {
+        align-content: flex-end;
+    }
+    .splash {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--pink0004);
+        position: absolute;
+        z-index: 999;
+    }
+
+    .splash > .logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--pink0008);
+    }
+
+    .wrapper > .heart-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        height: inherit;
+    }
+
+    .wrapper > .heart-container > .couple {
+        margin: 0;
+    }
+
+    .wrapper > .message {
+        height: inherit;
+    }
+    
+    .wrapper > .message > .message-box {
+        display: grid;
+        justify-items: center;
+        align-content: flex-start;
+        padding: 1em;
+        width: 20vw;
+        height: 80vh;
+        background-color: var(--white);
+        border-radius: 24px;
+    }
+
+    .wrapper > .message > .message-box > .avatar {
+        display: grid;
+        width: inherit;
+        height: 50vh;
+        border-radius: 24px;
+        background-color: var(--gray0009);
+        background-image: url("asset/img/renzter.jpeg");
+        background-size: 11em;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper > .message > .message-box > .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: inherit;
+        height: 30vh;
+    }
+
+    .wrapper > .message > .message-box > .letter {
+        text-align: center;
+    }
+
+    .wrapper > .message > .slide-panel {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        padding: 0 0.5 0 0.5em;
+        width: 26vw;
+        height: inherit;
+        overflow: hidden;
+    }
+
+    .wrapper > .message > .slide-panel > .slider-btn {
+        width: 10vw;
+        height: 24vh;
+        border: 0px;
+        border-radius: 45px;
+        text-align: center;
+        font-size: 36px;
+        background-color: transparent;
+        color: var(--charm-pink0001);
+}
