@@ -123,6 +123,7 @@ body {
         text-align: center;
         width: inherit;
         height: 25vh;
+        overflow: hidden;
     }
 
     .letter {
@@ -231,10 +232,11 @@ body {
         text-align: center;
         width: inherit;
         height: 30vh;
+        overflow: hidden;
     }
 
-    .wrapper > .message > .message-box > .letter {
-        text-align: center;
+    .letter {
+        font-size: 12px;
     }
 
     .wrapper > .message > .slide-panel {
